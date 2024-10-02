@@ -51,7 +51,13 @@
     This is called inversion of control. This is done using Auto wiring of beans and bean qualification. <br><br>
 5. <strong>Auto wiring</strong> <br>
    Spring framework can inject dependencies automatically. <br>
-   The Spring container detects those dependencies specified in the configuration file and the relationship between the beans. 
+   The Spring container detects those dependencies specified in the configuration file and the relationship between the beans. <br><br> 
+6. <strong>Some Spring modules and their use</strong>
+    <pre>a. Core: Dependency injection using IoC containers etc.
+   b. Testing: Mock object, MVC tests etc.
+   c. Data Access: Transactions, JDBC, JPA etc.
+   d. Web Servlet: Spring MVC etc.
+   </pre>
 
 ## Annotations in Spring
 1. <strong>@Configuration</strong>: Annotation which indicates that a class has bean definitions <br><br>
@@ -66,4 +72,31 @@
     To specify that a package need to be scanned for Components, we need to pass the pakcage name to the @ComponentScan <br>
     eg: @ComponentScan("myPackageName") <br>
     Once a package name is passed to the annotation, the package along with its sub-packages are scanned for component <br><br>
-7. <strong>@Autowired</strong>: Annotation to tell Spring that an attribute is to be auto wired
+7. <strong>@Autowired</strong>: Annotation to tell Spring that an attribute is to be auto wired <br>
+   Auto wiring can be done using 3 different approaches <br>
+   <pre>a. Constructor based injection: A parameterized constructor is created and @Autowired annotation is annotated on this constructor
+        Example: 
+            class C1 {
+                C2 obj;
+                @Autowired
+                public C1(C2 obj){
+                    this.obj=obj;
+                }
+            }
+   
+   b. Field based injection: The field to be autowired is annotated with @Autowired annotation
+        Example:
+            class C1 {
+                @Autowired
+                C2 obj;
+            }
+   
+   c. Setter based injection: The setter of attribute to be autowired is annotated with @Autowired annotation
+        Example:
+            class C1 {
+                C2 obj;
+                @Autowired
+                public void setObj(C2 obj){
+                    this.obj=obj;
+                }
+            }</pre>

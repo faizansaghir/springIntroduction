@@ -38,7 +38,7 @@ class Person{
 }
 @Configuration
 @ComponentScan
-public class AutowiredInjectionMain {
+public class ComponentComponentScanAutowiredMain {
 
     @Bean
     public String name(){
@@ -56,11 +56,11 @@ public class AutowiredInjectionMain {
     }
 
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(AutowiredInjectionMain.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(ComponentComponentScanAutowiredMain.class);
         System.out.println(context.getBean(Person.class));
         System.out.println(context.getBean(Address.class));
 
-        Arrays.stream(context.getBeanDefinitionNames()).forEach(AutowiredInjectionMain::printBean);
+        Arrays.stream(context.getBeanDefinitionNames()).forEach(ComponentComponentScanAutowiredMain::printBean);
     }
     public static void printBean(String beanName) {
         System.out.println(STR."Bean name: \{beanName}");

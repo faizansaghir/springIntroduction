@@ -90,6 +90,11 @@
                 @Autowired
                 C2 obj;
             }
+
+   <em>Note: If a field has @Autowired annotation, this by default looks for a bean which has bean name same as the field name <br>
+   eg: @Autowired
+         String name
+         <br> This will look for a bean of String type with name "name"</em>
    
    c. Setter based injection: The setter of attribute to be autowired is annotated with @Autowired annotation
         Example:
@@ -99,4 +104,10 @@
                 public void setObj(C2 obj){
                     this.obj=obj;
                 }
-            }</pre>
+            }
+   <em>Note: Function/setter name need not follow the conventional setter name method, 
+   any function name with @Autowired which accepts reference of the same type can be used for setter injection </em></pre>
+   a. It is recommended to use constructor based injection if dependency is mandatory to be set by caller <br>
+   b. It is recommended to use setter based injection if dependency is not mandatory to be set by caller <br>
+   c. One must avoid field based injection as it makes unit testing hard
+   

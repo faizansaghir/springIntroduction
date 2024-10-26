@@ -1,4 +1,4 @@
-package com.example.springIntroduction.dependencyInjection_03;
+package com.example.springIntroduction.dependencyInjection_03.common;
 
 import org.springframework.stereotype.Component;
 

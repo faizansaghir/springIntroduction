@@ -51,7 +51,11 @@
     This is called inversion of control. This is done using Auto wiring of beans and bean qualification. <br><br>
 5. <strong>Auto wiring</strong> <br>
    Spring framework can inject dependencies automatically. <br>
-   The Spring container detects those dependencies specified in the configuration file and the relationship between the beans. <br><br> 
+   The Spring container detects those dependencies specified in the configuration file and the relationship between the beans. 
+   The spring container acts as object factory and has the following jobs: <br>
+   &emsp; a. Create and manage objects (Inversion of Control) <br>
+   &emsp; b. Inject object dependencies (Dependency Injection)
+      <br><br> 
 6. <strong>Some Spring modules and their use</strong>
     <pre>a. Core: Dependency injection using IoC containers etc.
    b. Testing: Mock object, MVC tests etc.

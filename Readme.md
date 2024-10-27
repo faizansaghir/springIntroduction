@@ -110,7 +110,10 @@
                 }
             }
    <em>Note: Function/setter name need not follow the conventional setter name method, 
-   any function name with @Autowired which accepts reference of the same type can be used for setter injection </em></pre>
+   any function name with @Autowired which accepts reference of the same type can be used for setter injection.
+   &emsp;Also if there are multiple methods that can act as setter method with same parameter type, 
+   Spring will execute both setter methods in sequence of their definition
+   &emsp; If not beans qualify for setter injection, then Spring will throw error of no qualified bean</em></pre>
    a. It is recommended to use constructor based injection if dependency is mandatory to be set by caller <br>
    b. It is recommended to use setter based injection if dependency is not mandatory to be set by caller <br>
    c. One must avoid field based injection as it makes unit testing hard

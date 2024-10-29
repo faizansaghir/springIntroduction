@@ -116,5 +116,27 @@
    &emsp; If not beans qualify for setter injection, then Spring will throw error of no qualified bean</em></pre>
    a. It is recommended to use constructor based injection if dependency is mandatory to be set by caller <br>
    b. It is recommended to use setter based injection if dependency is not mandatory to be set by caller <br>
-   c. One must avoid field based injection as it makes unit testing hard
+   c. One must avoid field based injection as it makes unit testing hard <br><br>
+8. <strong>@Lazy</strong>: Annotation to tell Spring that, bean of the class is to be instantiated only if: <br>
+   a. Required for dependency injection <br>
+   b. Explicitly requested <br><br>
+   <em>Note: <br>
+   a. If we want all our beans to be lazy initialized, we can configure it in spring application.properties file <br>
+   b. We should avoid lazy initialization as any bean initialization issue will not be shown during startup </em>
+   <pre>Example:
+   For all beans to be lazily initialized
+      In application.properties file
+         spring.main.lazy-initialization=true
+      This will also cause Controller or any other Stereotype bean to be initialized when needed
+         eg: Controller bean which has mapping of certain API will also be initialized when API is hit
    
+   For specific class of bean to be lazily initialized
+      @Component
+      @Lazy
+      public class CricketCoach implements Coach {
+          @Override
+          public String getDailyWorkout() {
+              return "Practice fast bowling for 15 minutes";
+          }
+      }
+   </pre>

@@ -61,7 +61,10 @@
    b. Testing: Mock object, MVC tests etc.
    c. Data Access: Transactions, JDBC, JPA etc.
    d. Web Servlet: Spring MVC etc.
-   </pre>
+   </pre> <br>
+7. Scope of bean is how long a bean lives, how many instances are created etc. <br>
+   By default, the scope of bean is Singleton i.e. only 1 bean for the class type per Spring container
+   ![Different types of scope](./img/beanScopes.png?raw=true "BeanScopes")
 
 ## Annotations in Spring
 1. <strong>@Configuration</strong>: Annotation which indicates that a class has bean definitions <br><br>
@@ -139,4 +142,19 @@
               return "Practice fast bowling for 15 minutes";
           }
       }
-   </pre>
+   </pre> <br>
+9. <strong>@Scope</strong>: Annotation to specify the scope of the bean being created
+   <pre>Example
+      @Component
+      @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+      public class TennisCoach implements Coach {
+         public TennisCoach() {
+            System.out.println(STR."In constructor: \{getClass().getSimpleName()}");
+         }
+      
+          @Override
+          public String getDailyWorkout() {
+              return "Practice your backhand volley";
+          }
+      }
+   </pre> <br>

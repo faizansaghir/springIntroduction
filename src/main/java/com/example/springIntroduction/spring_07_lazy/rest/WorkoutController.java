@@ -1,6 +1,6 @@
-package com.example.springIntroduction.dependencyInjection_07.rest;
+package com.example.springIntroduction.spring_07_lazy.rest;
 
-import com.example.springIntroduction.dependencyInjection_07.common.Coach;
+import com.example.springIntroduction.spring_07_lazy.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.GetMapping;

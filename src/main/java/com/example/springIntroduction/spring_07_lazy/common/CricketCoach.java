@@ -1,4 +1,4 @@
-package com.example.springIntroduction.dependencyInjection_07.common;
+package com.example.springIntroduction.spring_07_lazy.common;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;

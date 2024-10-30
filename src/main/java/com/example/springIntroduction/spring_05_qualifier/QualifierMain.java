@@ -1,4 +1,4 @@
-package com.example.springIntroduction.dependencyInjection_05;
+package com.example.springIntroduction.spring_05_qualifier;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

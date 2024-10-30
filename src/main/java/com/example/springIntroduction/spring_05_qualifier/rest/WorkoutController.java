@@ -1,6 +1,6 @@
-package com.example.springIntroduction.dependencyInjection_05.rest;
+package com.example.springIntroduction.spring_05_qualifier.rest;
 
-import com.example.springIntroduction.dependencyInjection_05.common.Coach;
+import com.example.springIntroduction.spring_05_qualifier.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
-package com.example.springIntroduction.dependencyInjection_04.rest;
+package com.example.springIntroduction.spring_04_setterBasedInjection.rest;
 
-import com.example.springIntroduction.dependencyInjection_04.common.Coach;
+import com.example.springIntroduction.spring_04_setterBasedInjection.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

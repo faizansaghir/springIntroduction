@@ -1,6 +1,6 @@
-package com.example.springIntroduction.dependencyInjection_09.rest;
+package com.example.springIntroduction.spring_09_postConstructAndPreDestroy.rest;
 
-import com.example.springIntroduction.dependencyInjection_09.common.Coach;
+import com.example.springIntroduction.spring_09_postConstructAndPreDestroy.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;

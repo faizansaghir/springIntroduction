@@ -1,4 +1,4 @@
-package com.example.springIntroduction.dependencyInjection_09.common;
+package com.example.springIntroduction.spring_09_postConstructAndPreDestroy.common;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;

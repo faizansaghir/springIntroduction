@@ -1,4 +1,4 @@
-package com.example.springIntroduction.dependencyInjection_09;
+package com.example.springIntroduction.spring_09_postConstructAndPreDestroy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.example.springIntroduction.dependencyInjection_09.common;
+package com.example.springIntroduction.spring_09_postConstructAndPreDestroy.common;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;

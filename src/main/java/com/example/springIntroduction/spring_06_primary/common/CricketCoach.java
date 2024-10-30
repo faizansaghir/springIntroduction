@@ -1,6 +1,5 @@
-package com.example.springIntroduction.dependencyInjection_06.common;
+package com.example.springIntroduction.spring_06_primary.common;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 

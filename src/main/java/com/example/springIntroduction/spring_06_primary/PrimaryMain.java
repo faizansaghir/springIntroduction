@@ -1,4 +1,4 @@
-package com.example.springIntroduction.dependencyInjection_06;
+package com.example.springIntroduction.spring_06_primary;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,3 +9,4 @@ public class PrimaryMain {
         SpringApplication.run(PrimaryMain.class, args);
     }
 }
+git a

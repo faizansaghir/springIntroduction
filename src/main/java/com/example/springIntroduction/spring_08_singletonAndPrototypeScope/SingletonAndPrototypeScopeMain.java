@@ -1,4 +1,4 @@
-package com.example.springIntroduction.dependencyInjection_08;
+package com.example.springIntroduction.spring_08_singletonAndPrototypeScope;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

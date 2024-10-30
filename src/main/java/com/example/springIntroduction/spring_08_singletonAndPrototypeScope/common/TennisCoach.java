@@ -1,4 +1,4 @@
-package com.example.springIntroduction.dependencyInjection_08.common;
+package com.example.springIntroduction.spring_08_singletonAndPrototypeScope.common;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;

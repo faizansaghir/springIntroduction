@@ -1,4 +1,4 @@
-package com.example.springIntroduction.dependencyInjection_01;
+package com.example.springIntroduction.spring_01_springConfigurationBeanQualifierPrimary;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;

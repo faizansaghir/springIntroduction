@@ -184,5 +184,7 @@
           @PreDestroy
           public void destroyMethod(){
               System.out.println(STR."In PreDestroy method: \{getClass().getSimpleName()}");
-          }q
-      }</pre> <br>
+          }
+      }</pre> 
+    <em>Note: For prototype scope beans, the PreDestroy method is not called as the initialization is done by Spring, 
+    post which, Spring does not track the bean </em><br>

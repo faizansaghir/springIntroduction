@@ -1,4 +1,4 @@
-package com.example.springIntroduction.dependencyInjection_02;
+package com.example.springIntroduction.spring_02_componentComponentScanAutowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

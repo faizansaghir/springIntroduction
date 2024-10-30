@@ -64,7 +64,10 @@
    </pre> <br>
 7. Scope of bean is how long a bean lives, how many instances are created etc. <br>
    By default, the scope of bean is Singleton i.e. only 1 bean for the class type per Spring container
-   ![Different types of scope](./img/beanScopes.png?raw=true "BeanScopes")
+   ![Different types of scope](./img/beanScopes.png?raw=true "BeanScopes") <br><br>
+8. Bean lifecycle methods are methods that are called by Spring post construction and pre-destruction of bean. <br>
+   These function definition can be custom function which are annotated with <strong>@PostConstruct and @PreDestroy</strong> <br>
+   
 
 ## Annotations in Spring
 1. <strong>@Configuration</strong>: Annotation which indicates that a class has bean definitions <br><br>
@@ -158,3 +161,28 @@
           }
       }
    </pre> <br>
+10. <strong>@PostConstruct and @PreDestroy</strong>: Annotation to tell spring that the function being annotated is <br>
+    &emsp;a. Post construct method <br>
+    &emsp;b. Pre destroy method <br>
+    <pre>Example
+      @Component
+      public class CricketCoach implements Coach {
+         public CricketCoach() {
+            System.out.println(STR."In constructor: \{getClass().getSimpleName()}");
+         }
+      
+          @Override
+          public String getDailyWorkout() {
+              return "Practice fast bowling for 15 minutes";
+          }
+      
+          @PostConstruct
+          public void setupMethod(){
+              System.out.println(STR."In PostConstruct method: \{getClass().getSimpleName()}");
+          }
+      
+          @PreDestroy
+          public void destroyMethod(){
+              System.out.println(STR."In PreDestroy method: \{getClass().getSimpleName()}");
+          }q
+      }</pre> <br>

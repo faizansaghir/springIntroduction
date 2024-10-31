@@ -187,4 +187,24 @@
           }
       }</pre> 
     <em>Note: For prototype scope beans, the PreDestroy method is not called as the initialization is done by Spring, 
-    post which, Spring does not track the bean </em><br>
+    post which, Spring does not track the bean </em> <br><br>
+11. <strong>@Configuration</strong>: Annotation to tell Spring that a class is a configuration class. <br>
+    The configuration classes may contain Bean definitions.
+    <pre>Example:
+        @Configuration
+        public class CommonConfig {
+            ...
+        }</pre> <br>
+12. <strong>@Bean</strong>: Annotation to tell Spring that the function is a bean definition. <br>
+    These functions are defined inside the class with @Configuration annotation. <br>
+    The name of the bean is same as the function name. <br>
+    <pre>Example:
+        @Configuration
+        public class CommonConfig {
+        
+            @Bean
+            public Coach cricketCoach(){
+                return new CricketCoach();
+            }
+        
+        } </pre> <br>

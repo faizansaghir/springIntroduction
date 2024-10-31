@@ -207,4 +207,5 @@
                 return new CricketCoach();
             }
         
-        } </pre> <br>
+        } </pre> 
+    <em>Note: We can give a custom bean ID as @Bean("beanId") if we wish to provide a custom ID to the bean</em> <br><br>

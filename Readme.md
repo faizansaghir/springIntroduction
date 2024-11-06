@@ -88,9 +88,27 @@
    
 
 ## Annotations in Spring
-1. <strong>@Configuration</strong>: Annotation which indicates that a class has bean definitions <br><br>
-2. <strong>@Bean</strong>: Annotation which is applied on a method to specify that it returns a bean to be managed by Spring context <br> 
-    This is applied to method which are defined inside class that are annotated with @Configuration annotation <br><br>
+1. <strong>@Configuration</strong>: Annotation to tell Spring that a class is a configuration class. <br>
+    The configuration classes may contain Bean definitions.
+    <pre>Example:
+        @Configuration
+        public class CommonConfig {
+            ...
+        }</pre> <br>
+2. <strong>@Bean</strong>: Annotation to tell Spring that the function is a bean definition. <br>
+    These functions are defined inside the class with @Configuration annotation. <br>
+    The name of the bean is same as the function name. <br>
+    <pre>Example:
+        @Configuration
+        public class CommonConfig {
+        
+            @Bean
+            public Coach cricketCoach(){
+                return new CricketCoach();
+            }
+        
+        } </pre> 
+    <em>Note: We can give a custom bean ID as @Bean("beanId") if we wish to provide a custom ID to the bean</em> <br><br>
 3.  <strong>@Primary</strong>: When performing auto wiring or getting a bean of a specific class type using getBean method of spring context with class as parameter, Spring may find instances where multiple beans qualify for the type <br>
     Primary annotation in Spring is used to indicate the primary bean when multiple beans of the same type are present for auto wiring <br><br>
 4.  <strong>@Qualifier</strong>: Annotation used to explicitly specify which bean should be injected. <br><br>
@@ -206,24 +224,3 @@
       }</pre> 
     <em>Note: For prototype scope beans, the PreDestroy method is not called as the initialization is done by Spring, 
     post which, Spring does not track the bean </em> <br><br>
-11. <strong>@Configuration</strong>: Annotation to tell Spring that a class is a configuration class. <br>
-    The configuration classes may contain Bean definitions.
-    <pre>Example:
-        @Configuration
-        public class CommonConfig {
-            ...
-        }</pre> <br>
-12. <strong>@Bean</strong>: Annotation to tell Spring that the function is a bean definition. <br>
-    These functions are defined inside the class with @Configuration annotation. <br>
-    The name of the bean is same as the function name. <br>
-    <pre>Example:
-        @Configuration
-        public class CommonConfig {
-        
-            @Bean
-            public Coach cricketCoach(){
-                return new CricketCoach();
-            }
-        
-        } </pre> 
-    <em>Note: We can give a custom bean ID as @Bean("beanId") if we wish to provide a custom ID to the bean</em> <br><br>

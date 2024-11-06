@@ -72,8 +72,8 @@
 9. <strong>Hibernate</strong> <br>
    It is a framework for persisting/saving Java objects in a database. <br>
     Advantages of using Hibernate: <br>
-    &emsp;a. It handles low-level SQL
-    &emsp;b. Minimizes the amount of JDBC code to be developed
+    &emsp;a. It handles low-level SQL <br>
+    &emsp;b. Minimizes the amount of JDBC code to be developed <br>
     &emsp;c. Provides Object-to-Relational-Mapping(ORM) <br><br>
 10. <strong>JPA</strong> <br>
     Jakarta Persistence API previously known as Java Persistence API. <br>

@@ -65,7 +65,7 @@
 7. <strong>Scope of bean</strong> <br>
    It is how long a bean lives, how many instances are created etc. <br>
    By default, the scope of bean is Singleton i.e. only 1 bean for the class type per Spring container
-   ![Different types of scope](./img/beanScopes.png?raw=true "BeanScopes") <br><br>
+   ![Different types of scope](./img/beanScopes.PNG?raw=true "BeanScopes") <br><br>
 8. <strong>Bean lifecycle methods</strong> <br>
    These are methods that are called by Spring post construction and pre-destruction of bean. <br>
    These function definition can be custom function which are annotated with <strong>@PostConstruct and @PreDestroy</strong> <br><br>
@@ -84,7 +84,7 @@
     &emsp;a. You can switch implementation if you face some problem in a particular vendor-implementation. <br>
     &emsp;b. Your code is not tied to vendor-specific implementation, thus making it flexible and loosely coupled. <br><br>
 11. <strong>JPA, Hibernate and JDBC</strong> <br>
-    ![JPA, Hibernate and JDBC](./img/jpaHibernateAndJDBC.png?raw=true "JPAHibernateAndJDBC") <br><br>
+    ![JPA, Hibernate and JDBC](./img/jpaHibernateAndJDBC.PNG?raw=true "JPAHibernateAndJDBC") <br><br>
    
 
 ## Annotations in Spring
